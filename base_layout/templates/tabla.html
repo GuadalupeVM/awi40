@@ -1,0 +1,22 @@
+$def with(data)
+
+<link rel="stylesheet" type="text/css" href="estilos.css" />
+<table class="table">
+    <thead>
+        <th>No.</th>
+        <th>Nombre</th>
+    </thead>
+    <tbody>
+        $for i in data:
+        <tr>
+            <td>
+                $i[0]
+            </td>
+            <td>
+                $i[1]
+
+            </td>
+        </tr>
+
+    </tbody>
+</table>
