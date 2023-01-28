@@ -1,0 +1,68 @@
+$def with(data)
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+
+    <title>
+        Cookies
+    </title>
+
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 5px;
+            
+            background: rgb(89, 175, 214) url("gradient.gif") bottom left repeat-x;
+            color: rgb(197, 138, 199);
+        }
+
+        td,
+        th {
+            padding: 10px;
+            background: rgb(214, 198, 213);
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Cookies
+    </h1>
+    <table>
+        <thead>
+            <th>No.Visitas</th>
+            <th>Nombre</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>
+                    $data['visitas']
+                </td>
+                <td>
+                    $data['nombre']
+
+                </td>
+                <td>
+                    $data['fecha']
+
+                </td>
+                <td>
+                    $data['hora']
+
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+</body>
